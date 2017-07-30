@@ -7,7 +7,7 @@
 </head>
 <body>
 	<script>
-		var worker = new Worker('doWork.js');
+	var worker = new Worker('js/doWork.js');
 
 		worker.addEventListener('message', function(e) {
 			console.log('Worker said: ', e.data);
